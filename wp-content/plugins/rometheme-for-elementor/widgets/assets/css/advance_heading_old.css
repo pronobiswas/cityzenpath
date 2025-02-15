@@ -1,0 +1,161 @@
+ 
+  .rkit-advanced-heading p {
+    position: relative;
+    /* Menentukan posisi relatif untuk memposisikan pseudo-elemen */
+  }
+  
+  .gradient_text{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #000000
+}
+
+
+  .rkit-advanced-heading {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .rkit-advanced-heading {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+   
+  .rkit-advanced-heading p {
+    margin-bottom: 0;
+  }
+
+  .combined-text {
+    position: relative;
+    display: flex;
+    flex-direction: row;   
+    border-radius: 5px; 
+    gap: 10px;
+    justify-content : center;
+  }
+  
+  
+  .rkit-trp-text{
+    /* font-size: 60px; */
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+};
+ 
+.rkit-trp-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  z-index: -1;  
+  width: 100%; 
+  height: 100%;  
+  box-sizing: border-box;  
+}
+
+.before_text{
+  background-color:  black;
+  /* padding: 5px 5px 5px 5px; */
+}
+
+.center_text{ 
+  background-color:  black;
+  /* padding: 5px 5px 5px 5px; */
+}
+
+.after_text{ 
+    background-color: transparent;
+    background-image: linear-gradient(155deg, #E06DFF 0%, #3AD0C6 100%);
+    /* padding: 5px 5px 5px 5px; */
+}
+
+.bg-after{
+  background-color: transparent;  
+}
+
+
+ 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;  
+  margin: 0 0 10px 0; 
+  line-height: 1.4;  
+}
+ 
+h1.rkit-advanced-heading  {
+  font-size: 3.5rem;  
+  font-weight: bold; 
+}
+ 
+h2.rkit-advanced-heading  {
+  font-size: 3rem; 
+  font-weight: bold;
+}
+ 
+h3.rkit-advanced-heading  {
+  font-size: 2.5rem;
+  color: #34a853;
+  font-weight: normal;  
+}
+ 
+h4.rkit-advanced-heading  {
+  font-size: 2rem;
+  color: #fbbc05;
+  font-weight: normal;
+}
+ 
+h5.rkit-advanced-heading  {
+  font-size: 1.5rem;
+  color: #ea4335;
+  font-weight: lighter;  
+}
+ 
+h6.rkit-advanced-heading  {
+  font-size: 1rem;
+  color: #70757a;
+  font-weight: lighter;
+  text-transform: uppercase;  
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  .combined-text {
+      gap: 20px;  
+  }
+}
+
+ 
+@media only screen and (max-width: 768px) {
+  .combined-text {  
+      gap: 15px;
+  }
+}
+
+ 
+@media only screen and (max-width: 480px) {
+  .combined-text {
+      /* /* flex-direction: column; */
+      gap: 7px;
+      border-radius: 3px;  
+  }
+
+  .before_text{
+    font-size: 1rem; 
+  }
+
+  .center_text{
+    font-size: 1rem; 
+  }
+
+  .after_text{
+    font-size: 1rem; 
+  }
+}

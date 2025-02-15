@@ -1,0 +1,34 @@
+{
+  "logocarousel": {
+    "name": "Logo Carousel",
+    "icon": "rtmicon rtmicon-client-carousel",
+    "class_name": "",
+    "category": "rkit_pro",
+    "status": true,
+    "type": "pro"
+  },
+  "postcarousel" : {
+    "name" : "Post Carousel",
+    "icon": "rtmicon rtmicon-post-carousel",
+    "class_name": "",
+    "category": "rkit_pro",
+    "status": true,
+    "type": "pro"
+  },
+  "pricingbox" : {
+    "name" : "Pricing Image Box",
+    "icon": "rtmicon rtmicon-pricing-image-box",
+    "class_name": "",
+    "category": "rkit_pro",
+    "status": true,
+    "type": "pro"
+  },
+  "pricelist": {
+    "name": "Pricing List",
+    "icon": "eicon-price-list",
+    "class_name": "",
+    "category": "rkit",
+    "status": true,
+    "type": "pro"
+  }
+}

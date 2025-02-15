@@ -1,0 +1,320 @@
+{
+    "version": "0.4",
+    "title": "Gimmigrate &#8211; Question RForm",
+    "type": "section",
+    "metadata": {
+        "template_type": "section-contact",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_canvas"
+    },
+    "content": [
+        {
+            "id": "6c5a463f",
+            "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "flex_gap": {
+                    "column": "20",
+                    "row": "20",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 20
+                }
+            },
+            "elements": [
+                {
+                    "id": "4062c0a8",
+                    "settings": {
+                        "show_label": "",
+                        "label_text": "Text",
+                        "name_input": "rform-text",
+                        "placeholder_input": "Full Name",
+                        "warning_message": "This field is required",
+                        "input_padding": {
+                            "unit": "px",
+                            "top": "13.5",
+                            "right": "18",
+                            "bottom": "13.5",
+                            "left": "18",
+                            "isLinked": false
+                        },
+                        "input_border_radius": {
+                            "unit": "px",
+                            "top": "5",
+                            "right": "5",
+                            "bottom": "5",
+                            "left": "5",
+                            "isLinked": true
+                        },
+                        "input_background_normal_background": "classic",
+                        "input_border_normal_border": "solid",
+                        "input_border_normal_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "input_background_hover_background": "classic",
+                        "input_background_focus_background": "classic",
+                        "__globals__": {
+                            "input_typography_typography": "globals\/typography?id=cfb4b20",
+                            "input_color_normal": "globals\/colors?id=primary",
+                            "input_background_normal_color": "globals\/colors?id=f340149",
+                            "input_border_normal_color": "globals\/colors?id=13ff17d",
+                            "input_color_hover": "globals\/colors?id=primary",
+                            "input_background_hover_color": "globals\/colors?id=f340149",
+                            "input_color_focus": "globals\/colors?id=primary",
+                            "input_background_focus_color": "globals\/colors?id=f340149",
+                            "placeholder_color": "globals\/colors?id=fdba9a6",
+                            "placeholder_typography_typography": "globals\/typography?id=cfb4b20",
+                            "warning_color": "globals\/colors?id=13ff17d",
+                            "warning_typography_typography": "globals\/typography?id=cfb4b20",
+                            "input_border_hover_color": "globals\/colors?id=13ff17d",
+                            "input_border_focus_color": "globals\/colors?id=13ff17d"
+                        },
+                        "input_border_hover_border": "solid",
+                        "input_border_hover_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "input_border_focus_border": "solid",
+                        "input_border_focus_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "text",
+                    "elType": "widget"
+                },
+                {
+                    "id": "32e1e0b9",
+                    "settings": {
+                        "show_label": "",
+                        "label_text": "Email",
+                        "name_input": "rform-email",
+                        "placeholder_input": "Email",
+                        "warning_message": "This field is required",
+                        "input_padding": {
+                            "unit": "px",
+                            "top": "13.5",
+                            "right": "18",
+                            "bottom": "13.5",
+                            "left": "18",
+                            "isLinked": false
+                        },
+                        "input_border_radius": {
+                            "unit": "px",
+                            "top": "5",
+                            "right": "5",
+                            "bottom": "5",
+                            "left": "5",
+                            "isLinked": true
+                        },
+                        "input_background_normal_background": "classic",
+                        "input_border_normal_border": "solid",
+                        "input_border_normal_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "input_background_hover_background": "classic",
+                        "input_background_focus_background": "classic",
+                        "__globals__": {
+                            "input_typography_typography": "globals\/typography?id=cfb4b20",
+                            "input_color_normal": "globals\/colors?id=primary",
+                            "input_background_normal_color": "globals\/colors?id=f340149",
+                            "input_border_normal_color": "globals\/colors?id=13ff17d",
+                            "input_color_hover": "globals\/colors?id=primary",
+                            "input_background_hover_color": "globals\/colors?id=f340149",
+                            "input_color_focus": "globals\/colors?id=primary",
+                            "input_background_focus_color": "globals\/colors?id=f340149",
+                            "placeholder_color": "globals\/colors?id=fdba9a6",
+                            "placeholder_typography_typography": "globals\/typography?id=cfb4b20",
+                            "warning_color": "globals\/colors?id=13ff17d",
+                            "warning_typography_typography": "globals\/typography?id=cfb4b20",
+                            "input_border_hover_color": "globals\/colors?id=13ff17d",
+                            "input_border_focus_color": "globals\/colors?id=13ff17d"
+                        },
+                        "input_border_hover_border": "solid",
+                        "input_border_hover_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "input_border_focus_border": "solid",
+                        "input_border_focus_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "email",
+                    "elType": "widget"
+                },
+                {
+                    "id": "35a0c42c",
+                    "settings": {
+                        "show_label": "",
+                        "label_text": "Message",
+                        "name_input": "rform-message ",
+                        "placeholder_input": "Question",
+                        "warning_message": "This field is required",
+                        "input_height": {
+                            "unit": "px",
+                            "size": 250,
+                            "sizes": []
+                        },
+                        "input_padding": {
+                            "unit": "px",
+                            "top": "13.5",
+                            "right": "18",
+                            "bottom": "13.5",
+                            "left": "18",
+                            "isLinked": false
+                        },
+                        "input_border_radius": {
+                            "unit": "px",
+                            "top": "5",
+                            "right": "5",
+                            "bottom": "5",
+                            "left": "5",
+                            "isLinked": true,
+                            "size": 5
+                        },
+                        "input_border_radius_tablet": {
+                            "unit": "px",
+                            "top": "",
+                            "right": "",
+                            "bottom": "",
+                            "left": "",
+                            "isLinked": true
+                        },
+                        "input_border_radius_mobile": {
+                            "unit": "px",
+                            "top": "",
+                            "right": "",
+                            "bottom": "",
+                            "left": "",
+                            "isLinked": true
+                        },
+                        "input_background_normal_background": "classic",
+                        "input_border_normal_border": "solid",
+                        "input_border_normal_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "input_background_hover_background": "classic",
+                        "input_background_focus_background": "classic",
+                        "__globals__": {
+                            "input_typography_typography": "globals\/typography?id=cfb4b20",
+                            "input_color_normal": "globals\/colors?id=primary",
+                            "input_background_normal_color": "globals\/colors?id=f340149",
+                            "input_border_normal_color": "globals\/colors?id=13ff17d",
+                            "input_color_hover": "globals\/colors?id=primary",
+                            "input_background_hover_color": "globals\/colors?id=f340149",
+                            "input_color_focus": "globals\/colors?id=primary",
+                            "input_background_focus_color": "globals\/colors?id=f340149",
+                            "placeholder_color": "globals\/colors?id=fdba9a6",
+                            "placeholder_typography_typography": "globals\/typography?id=cfb4b20",
+                            "warning_color": "globals\/colors?id=13ff17d",
+                            "warning_typography_typography": "globals\/typography?id=cfb4b20",
+                            "input_border_hover_color": "globals\/colors?id=13ff17d",
+                            "input_border_focus_color": "globals\/colors?id=13ff17d"
+                        },
+                        "input_border_hover_border": "solid",
+                        "input_border_hover_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "input_border_focus_border": "solid",
+                        "input_border_focus_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "text-area",
+                    "elType": "widget"
+                },
+                {
+                    "id": "3ba06e42",
+                    "settings": {
+                        "button_text": "Send Question",
+                        "btn_fullwidth": "",
+                        "__globals__": {
+                            "btn_color_hover": "globals\/colors?id=primary",
+                            "btn_background_normal_color": "globals\/colors?id=primary",
+                            "border_normal_color": "globals\/colors?id=primary",
+                            "btn_background_hover_color": "globals\/colors?id=f340149",
+                            "border_hover_color": "globals\/colors?id=primary"
+                        },
+                        "border_normal_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "btn_background_normal_background": "classic",
+                        "border_hover_width": {
+                            "unit": "px",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "btn_color_hover": "#263173",
+                        "border_normal_border": "solid",
+                        "border_hover_border": "solid",
+                        "btn_background_hover_background": "classic"
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "rform_button_submit",
+                    "elType": "widget"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        }
+    ]
+}

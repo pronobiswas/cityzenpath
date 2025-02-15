@@ -1,0 +1,10 @@
+.rkit-headerinfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rkit-list-headerinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

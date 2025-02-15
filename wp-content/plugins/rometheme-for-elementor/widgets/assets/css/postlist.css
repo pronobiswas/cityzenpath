@@ -1,0 +1,172 @@
+.popular-posts{
+  padding: 0px 0px 0px 0px;
+}
+
+.rkit-item-postlist {
+    display: flex;
+    /* align-items: flex-start; */ 
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+  .rkit-item-thumbnail {
+    flex: 0 0 auto;  
+    display: flex;
+    height: 100%;
+    /* align-items: center;  
+    justify-content: center;   */
+}
+
+.rkit-item-thumbnail img { 
+    max-height: 100%;  
+    width: 125px;  
+}
+  .rkit-item-content {
+    flex-grow: 1; /* Konten memenuhi sisa ruang */
+  }
+
+  .rkit-content-reverse{
+    justify-items : end;
+  }
+
+  .rkit-content-normal{
+    justify-items : start;
+  }
+
+
+  .rkit-title-postlist {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .rkit-metadata-postlist-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .rkit-metadata-item-postlist {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .content_descripson {
+    /* display: flex; */
+    color: #666;
+  }
+  
+  li {
+    list-style-type: none;
+    margin-bottom: 2px;
+  } 
+
+  
+a.rkit-readmore-postlist-btn {
+  background-color: #b0e7e0;
+  border-radius: 5px;
+  text-align: center;
+  padding: 12px 20px 12px 20px;
+  font-size: 15px;
+  color: white;
+  transition: all 0.5s;
+  border: none;
+  /* display: flex; */
+  align-items: left;
+  gap: 0.5rem;
+  display: inline-flex;  
+  align-items: center;   
+  justify-content: center;  
+  text-decoration: none;  
+  padding: 10px 20px;
+}
+
+a.rkit-readmore-postlist-btn:hover {
+  background-color: #33e4c0;
+  color: black;
+} 
+
+.rkit-readmore-postlist-div {
+  display: flex;
+}
+
+.rkit-icon-readmore {
+  font-size: 16px;  
+  margin-right: 8px;  
+  display: inline-block;
+}
+
+.div_test{
+  border-bottom : 1px;
+  border-bottom-style : solid;
+  border-color :#726b6b;
+}
+
+.divider_line:first-child{
+  padding-block-start: 10px !important;
+}
+
+
+.divider_line:not(:last-child){
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #C5B9B9;
+}
+
+.divider_line:last-child{
+  border-bottom: 0px;  
+  list-style: none; 
+}
+
+
+
+
+  /* Default styles (untuk layar desktop dan tablet) sudah diatur seperti sebelumnya */
+
+@media (max-width: 926px) { 
+    .rkit-item-postlist {
+      flex-direction: column;  
+      align-items: center; 
+      text-align: center;  
+    }
+  
+    .rkit-item-thumbnail {
+      margin-bottom: 15px;  
+    }
+  
+    .rkit-item-thumbnail img {
+      max-width: 100%;  
+      height: auto;
+    }
+  
+    .rkit-item-content {
+      flex-grow: 0;  
+      width: 100%;  
+    }
+  
+    .rkit-metadata-postlist-row {
+      justify-content: center; 
+      flex-wrap: wrap;  
+      gap: 15px; 
+    }
+  
+    .rkit-metadata-item-postlist {
+      justify-content: center;  
+    }
+  
+    .rkit-title-postlist {
+      font-size: 16px;
+    }
+  
+    .content_descripson {
+      /* display: flex; */
+      font-size: 14px; 
+    }
+  
+    li {
+      margin-bottom: 2px;
+    }
+  }
+  

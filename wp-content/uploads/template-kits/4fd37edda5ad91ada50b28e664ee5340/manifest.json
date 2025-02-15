@@ -1,0 +1,1489 @@
+{
+    "manifest_version": "1.0.21",
+    "title": "Gimmigrate - Immigration & Visa Consulting Elementor Template Kit",
+    "page_builder": "elementor",
+    "kit_version": "1.0.2",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/home\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About Us",
+            "screenshot": "screenshots\/about-us.jpg",
+            "source": "templates\/about-us.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/about-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Team",
+            "screenshot": "screenshots\/team.jpg",
+            "source": "templates\/team.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/team\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Visa",
+            "screenshot": "screenshots\/visa.jpg",
+            "source": "templates\/visa.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/visa\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Visa Detail",
+            "screenshot": "screenshots\/visa-detail.jpg",
+            "source": "templates\/visa-detail.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/visa-detail\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Coaching",
+            "screenshot": "screenshots\/coaching.jpg",
+            "source": "templates\/coaching.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/coaching\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Coaching Detail",
+            "screenshot": "screenshots\/coaching-detail.jpg",
+            "source": "templates\/coaching-detail.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/coaching-detail\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Country",
+            "screenshot": "screenshots\/country.jpg",
+            "source": "templates\/country.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/country\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Country Detail",
+            "screenshot": "screenshots\/country-detail.jpg",
+            "source": "templates\/country-detail.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/country-detail\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Pricing",
+            "screenshot": "screenshots\/pricing.jpg",
+            "source": "templates\/pricing.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/pricing\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "FAQ",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/faq\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/blog\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Post",
+            "screenshot": "screenshots\/single-post.jpg",
+            "source": "templates\/single-post.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/single-post\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "404 Error",
+            "screenshot": "screenshots\/404-error.jpg",
+            "source": "templates\/404-error.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/404-error\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact Us",
+            "screenshot": "screenshots\/contact-us.jpg",
+            "source": "templates\/contact-us.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/contact-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Gimmigrate - Assessment RForm",
+            "screenshot": "screenshots\/gimmigrate-assessment-rform.jpg",
+            "source": "templates\/gimmigrate-assessment-rform.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/gimmigrate-assessment-rform\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Gimmigrate - Question RForm",
+            "screenshot": "screenshots\/gimmigrate-question-rform.jpg",
+            "source": "templates\/gimmigrate-question-rform.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/gimmigrate-question-rform\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Gimmigrate - Contact RForm",
+            "screenshot": "screenshots\/gimmigrate-contact-rform.jpg",
+            "source": "templates\/gimmigrate-contact-rform.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/gimmigrate-contact-rform\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Gimmigrate - Header",
+            "screenshot": "screenshots\/gimmigrate-header.jpg",
+            "source": "templates\/gimmigrate-header.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/gimmigrate-header\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Gimmigrate - Footer",
+            "screenshot": "screenshots\/gimmigrate-footer.jpg",
+            "source": "templates\/gimmigrate-footer.json",
+            "preview_url": "https:\/\/gtkit.rometheme.pro\/gimmigrate\/template-kit\/gimmigrate-footer\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "ElementsKit Lite",
+            "version": "3.1.4",
+            "file": "elementskit-lite\/elementskit-lite.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "RomethemeKit For Elementor",
+            "version": "1.4.4",
+            "file": "rometheme-for-elementor\/RomeTheme.php",
+            "author": "Rometheme"
+        },
+        {
+            "name": "RomethemeForm",
+            "version": "1.1.5",
+            "file": "romethemeform\/rometheme-form.php",
+            "author": "Rometheme"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.21.5",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "top-view-of-couple-planning-their-vacation-with-wo-9NFQ2E5.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/top-view-of-couple-planning-their-vacation-with-wo-9NFQ2E5-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 305948,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "logo10.png",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/logo10-800x533.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 25486,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "young-woman-travel-agent-with-flight-tickets-in-ha-AXEX6WW.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/young-woman-travel-agent-with-flight-tickets-in-ha-AXEX6WW.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 279692,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "ukrainian-passport-and-money-on-map-2DR7JFL.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/ukrainian-passport-and-money-on-map-2DR7JFL.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 279919,
+            "dimensions": [
+                800,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "lipsum1.png",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/lipsum1.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 7814,
+            "dimensions": [
+                600,
+                152
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com"
+        },
+        {
+            "filename": "lipsum6.png",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/lipsum6.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 7980,
+            "dimensions": [
+                600,
+                168
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com"
+        },
+        {
+            "filename": "lipsum5.png",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/lipsum5.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 6996,
+            "dimensions": [
+                600,
+                150
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com"
+        },
+        {
+            "filename": "lipsum4.png",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/lipsum4.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 8051,
+            "dimensions": [
+                600,
+                175
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com"
+        },
+        {
+            "filename": "lipsum3.png",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/lipsum3.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 7288,
+            "dimensions": [
+                600,
+                175
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com"
+        },
+        {
+            "filename": "lipsum2.png",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/lipsum2.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 4970,
+            "dimensions": [
+                600,
+                123
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com"
+        },
+        {
+            "filename": "logo4.png",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/logo4-800x533.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/visa.json",
+                    "name": "Visa"
+                },
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                },
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 37587,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "providing-documents-for-visa-application-DXB5RGZ.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/providing-documents-for-visa-application-DXB5RGZ-800x375.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/visa.json",
+                    "name": "Visa"
+                },
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 303523,
+            "dimensions": [
+                1920,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "man-with-airplane-tickets-and-passport-4SYCE7N.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/man-with-airplane-tickets-and-passport-4SYCE7N-800x375.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/visa.json",
+                    "name": "Visa"
+                },
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 295958,
+            "dimensions": [
+                1920,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "young-woman-using-cellphone-in-airport-KE9NFAMa.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/young-woman-using-cellphone-in-airport-KE9NFAMa.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 294641,
+            "dimensions": [
+                800,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "businessman-working-at-laptop-taking-notes-in-note-NAKLCXA.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/businessman-working-at-laptop-taking-notes-in-note-NAKLCXA.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 218296,
+            "dimensions": [
+                600,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "college-student-YCNL3GU.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/college-student-YCNL3GU.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 253180,
+            "dimensions": [
+                600,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "attractive-business-woman-24AG6Y4.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/attractive-business-woman-24AG6Y4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 236844,
+            "dimensions": [
+                600,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "american-passports-and-flag-with-the-symbols-of-th-XKC2DG9.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/american-passports-and-flag-with-the-symbols-of-th-XKC2DG9-800x375.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/visa.json",
+                    "name": "Visa"
+                },
+                {
+                    "source": "templates\/visa-detail.json",
+                    "name": "Visa Detail"
+                },
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                },
+                {
+                    "source": "templates\/coaching-detail.json",
+                    "name": "Coaching Detail"
+                },
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                },
+                {
+                    "source": "templates\/country-detail.json",
+                    "name": "Country Detail"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 301362,
+            "dimensions": [
+                1920,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "the-statue-of-liberty-at-new-york-city-CVWKZ9Nb.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/the-statue-of-liberty-at-new-york-city-CVWKZ9Nb.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/visa.json",
+                    "name": "Visa"
+                },
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                }
+            ],
+            "filesize": 301314,
+            "dimensions": [
+                750,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "sydney-harbour-bridge-on-a-clear-day-PWC4TVF.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/sydney-harbour-bridge-on-a-clear-day-PWC4TVF.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/visa.json",
+                    "name": "Visa"
+                },
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                }
+            ],
+            "filesize": 293412,
+            "dimensions": [
+                750,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "outdoor-view-of-the-colosseum-or-coliseum-in-rome-VF8RLFSa.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/outdoor-view-of-the-colosseum-or-coliseum-in-rome-VF8RLFSa.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/visa.json",
+                    "name": "Visa"
+                },
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                }
+            ],
+            "filesize": 289581,
+            "dimensions": [
+                750,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "specialist-approving-visa-application-at-table-926ZJQGb.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/specialist-approving-visa-application-at-table-926ZJQGb-800x375.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/visa.json",
+                    "name": "Visa"
+                },
+                {
+                    "source": "templates\/visa-detail.json",
+                    "name": "Visa Detail"
+                },
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                },
+                {
+                    "source": "templates\/coaching-detail.json",
+                    "name": "Coaching Detail"
+                },
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                },
+                {
+                    "source": "templates\/country-detail.json",
+                    "name": "Country Detail"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                }
+            ],
+            "filesize": 297329,
+            "dimensions": [
+                1920,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "woman-working-with-papers-in-embassy-F5W47R7.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/woman-working-with-papers-in-embassy-F5W47R7.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 307785,
+            "dimensions": [
+                750,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "documents-for-making-visa-flat-lay-TKNLLXA.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/documents-for-making-visa-flat-lay-TKNLLXA.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 301751,
+            "dimensions": [
+                800,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "businessman-working-at-laptop-taking-notes-in-note-NAKLCXAa.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/businessman-working-at-laptop-taking-notes-in-note-NAKLCXAa.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 283360,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "portrait-of-a-business-man-HWYNCJEa.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/portrait-of-a-business-man-HWYNCJEa.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 215466,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "attractive-business-woman-24AG6Y4a.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/attractive-business-woman-24AG6Y4a.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 304496,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "young-woman-travel-agent-with-flight-tickets-in-ha-AXEX6WWa.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/young-woman-travel-agent-with-flight-tickets-in-ha-AXEX6WWa.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 295503,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "modern-businessman-portrait-WW9G7WQ.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/modern-businessman-portrait-WW9G7WQ.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 294004,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "portrait-of-successful-businesswoman-using-wheelch-XMPNY4C.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/portrait-of-successful-businesswoman-using-wheelch-XMPNY4C.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 275695,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "portrait-of-young-asian-businessman-47L299E.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/portrait-of-young-asian-businessman-47L299E.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 252622,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "happy-trader-cheerful-businessman-in-formal-clothe-AATBQ9C.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/happy-trader-cheerful-businessman-in-formal-clothe-AATBQ9C.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 222272,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "young-woman-smiling-and-shaking-hands-with-tourist-EVS8U2N.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/young-woman-smiling-and-shaking-hands-with-tourist-EVS8U2N-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/visa-detail.json",
+                    "name": "Visa Detail"
+                }
+            ],
+            "filesize": 303023,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "teacher-with-group-of-mature-adult-students-in-cla-8A84H6B.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/teacher-with-group-of-mature-adult-students-in-cla-8A84H6B-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                }
+            ],
+            "filesize": 280416,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "education-of-managers-PEGTLRD.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/education-of-managers-PEGTLRD-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                }
+            ],
+            "filesize": 260649,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "young-man-using-laptop-with-classmates-studying-in-P2PEKRN.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/young-man-using-laptop-with-classmates-studying-in-P2PEKRN-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                }
+            ],
+            "filesize": 303035,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "group-of-teenage-students-study-in-library-class-SWDF7G5.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/group-of-teenage-students-study-in-library-class-SWDF7G5-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                }
+            ],
+            "filesize": 306907,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "group-of-young-students-studying-together-CT3QL6E.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/group-of-young-students-studying-together-CT3QL6E-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                },
+                {
+                    "source": "templates\/coaching-detail.json",
+                    "name": "Coaching Detail"
+                }
+            ],
+            "filesize": 301219,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "teacher-with-group-of-mature-adult-students-in-cla-4VNT688.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/teacher-with-group-of-mature-adult-students-in-cla-4VNT688-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/coaching.json",
+                    "name": "Coaching"
+                }
+            ],
+            "filesize": 306039,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "cn-tower-by-buildings-in-city-ZJSC44H.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/cn-tower-by-buildings-in-city-ZJSC44H.jpg",
+            "templates": [
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                }
+            ],
+            "filesize": 303453,
+            "dimensions": [
+                750,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "big-ben-JCLK8CF.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/big-ben-JCLK8CF.jpg",
+            "templates": [
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                }
+            ],
+            "filesize": 300886,
+            "dimensions": [
+                750,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "nyhavn-in-denmark-PWLU998.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/nyhavn-in-denmark-PWLU998.jpg",
+            "templates": [
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                }
+            ],
+            "filesize": 302588,
+            "dimensions": [
+                750,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "singapore-skyscrapers-YZVXH74.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/singapore-skyscrapers-YZVXH74.jpg",
+            "templates": [
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                }
+            ],
+            "filesize": 298406,
+            "dimensions": [
+                750,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "temple-of-heaven-in-beijing-china-MSN8PUW.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/temple-of-heaven-in-beijing-china-MSN8PUW.jpg",
+            "templates": [
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                }
+            ],
+            "filesize": 300674,
+            "dimensions": [
+                750,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "hyangwonjeong-pavilion-gyeongbokgung-palace-seoul-ZSLAG7Q.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/hyangwonjeong-pavilion-gyeongbokgung-palace-seoul-ZSLAG7Q.jpg",
+            "templates": [
+                {
+                    "source": "templates\/country.json",
+                    "name": "Country"
+                }
+            ],
+            "filesize": 303954,
+            "dimensions": [
+                750,
+                900
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "the-statue-of-liberty-at-new-york-city-CVWKZ9Nd.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/the-statue-of-liberty-at-new-york-city-CVWKZ9Nd-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/country-detail.json",
+                    "name": "Country Detail"
+                }
+            ],
+            "filesize": 278972,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "customer-service-representative-at-work-8SVFAV4.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/customer-service-representative-at-work-8SVFAV4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 223457,
+            "dimensions": [
+                600,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "happy-young-female-in-pink-cap-sitting-on-the-blue-3ZKM8YR.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/happy-young-female-in-pink-cap-sitting-on-the-blue-3ZKM8YR-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 306459,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "specialist-rejecting-travel-visa-at-table-DZXCZJD.jpg",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/specialist-rejecting-travel-visa-at-table-DZXCZJD-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/404-error.json",
+                    "name": "404 Error"
+                }
+            ],
+            "filesize": 303854,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/collections\/RH7W5GMEF2"
+        },
+        {
+            "filename": "Gimmigrate-Logo.png",
+            "thumbnail_url": "http:\/\/gtkit.rometheme.pro\/gimmigrate\/wp-content\/uploads\/sites\/6\/2022\/07\/Gimmigrate-Logo.png",
+            "templates": [
+                {
+                    "source": "templates\/gimmigrate-header.json",
+                    "name": "Gimmigrate - Header"
+                },
+                {
+                    "source": "templates\/gimmigrate-footer.json",
+                    "name": "Gimmigrate - Footer"
+                }
+            ],
+            "filesize": 13235,
+            "dimensions": [
+                600,
+                211
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        }
+    ]
+}

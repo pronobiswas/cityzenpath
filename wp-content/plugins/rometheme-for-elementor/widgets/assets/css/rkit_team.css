@@ -1,0 +1,452 @@
+.rkit-team-card {
+    background-color: white;
+    transition: all 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.pointer {
+    --pointer-size : 5px;
+}
+
+.rkit-team-card.pointer::before {
+    content: "";
+    height: var(--pointer-size);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: blue;
+    position: absolute;
+    z-index: 9999;
+}
+
+.rkit-team-card.pointer::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: var(--pointer-size);
+    transition: width 0.5s ease;
+    background: #00cea6;
+    z-index: 99999;
+}
+
+.rkit-team-card:hover.pointer::after {
+    width: 100%;
+}
+
+.rkit-team__detail {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+.rkit-team__detail h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.rkit-team__img {
+    display: flex;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.rkit-team__img img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+
+.rkit-team__img.move-left img {
+    transform: scale(1.2) translateX(8%);
+}
+
+.rkit-team__img.move-right img {
+    transform: scale(1.2) translateX(-8%);
+}
+
+.rkit-team__img.move-up img {
+    transform: scale(1.2) translateY(8%);
+}
+
+.rkit-team__img.move-down img {
+    transform: scale(1.2) translateY(-8%);
+}
+
+.rkit-team-card:hover .rkit-team__img.move-left img,
+.rkit-team-card:hover .rkit-team__img.move-right img,
+.rkit-team-card:hover .rkit-team__img.move-up img,
+.rkit-team-card:hover .rkit-team__img.move-down img {
+    transform: scale(1.2) translateX(0%);
+}
+
+.rkit-team-card:hover .rkit-team__img.zoom-in img {
+    transform: scale(1.2);
+}
+
+.rkit-team__img.zoom-out img {
+    transform: scale(1.2);
+}
+
+.rkit-team-card:hover .rkit-team__img.zoom-out img {
+    transform: scale(1);
+}
+
+.rkit-team__role {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.rkit-team__description {
+    margin-bottom: 0.5rem;
+}
+
+.rkit-team__overlay {
+    overflow: hidden;
+}
+
+.rkit-team__overlay .rkit-team-card {
+    position: relative;
+}
+
+.rkit-team__overlay .rkit-team__detail {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: all 0.5s;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rkit-team__overlay .rkit-team__detail::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* transform: translateY(10%); */
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: -1;
+}
+
+.rkit-team__overlay:hover .rkit-team__detail,
+.rkit-team__overlay:hover .rkit-team__detail::after
+{
+    visibility: visible;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.rkit-team__overlay:hover .rkit-team__img {
+    filter: blur(5px);
+}
+
+
+.rkit-team__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.rkit-team__social_item {
+    padding: 20px;
+    aspect-ratio: 1/1;
+    /* width: 35px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color);
+    transition: all 0.5s;
+}
+
+.rkit-team__social_icon {
+    color: var(--icon-color);
+    fill: var(--icon-color);
+}
+
+.rkit-team__social_on_hover_top .rkit-team-card,
+.rkit-team__social_on_hover_left .rkit-team-card,
+.rkit-team__social_on_hover_right .rkit-team-card,
+.rkit-team__social_on_hover_bottom .rkit-team-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.rkit-team__social_on_hover_top .rkit-team__social,
+.rkit-team__social_on_hover_left .rkit-team__social,
+.rkit-team__social_on_hover_right .rkit-team__social,
+.rkit-team__social_on_hover_bottom .rkit-team__social {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.rkit-team__social_on_hover_top .rkit-team__social ,
+.rkit-team__social_on_hover_bottom .rkit-team__social {
+    flex-direction: row;
+}
+
+.rkit-team__social_on_hover_left .rkit-team__social, 
+.rkit-team__social_on_hover_right .rkit-team__social {
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+}
+
+.rkit-team__social_on_hover_top .rkit-team__social, 
+.rkit-team__social_on_hover_bottom .rkit-team__social {
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    justify-content: center;
+
+}
+
+.rkit-team__social_on_hover_left .rkit-team__social {
+    left: -50px;
+}
+
+.rkit-team__social_on_hover_left:hover .rkit-team__social {
+    left: 0;
+    opacity: 1;
+}
+
+.rkit-team__social_on_hover_right .rkit-team__social {
+    right: -50px;
+}
+
+.rkit-team__social_on_hover_right:hover .rkit-team__social {
+    right: 0;
+    opacity: 1;
+}
+
+.rkit-team__social_on_hover_top .rkit-team__social {
+    top: -50px;
+}
+
+.rkit-team__social_on_hover_top:hover .rkit-team__social {
+    top: 0;
+    opacity: 1;
+}
+
+.rkit-team__social_on_hover_bottom .rkit-team__social {
+    bottom: -50px;
+}
+
+.rkit-team__social_on_hover_bottom:hover .rkit-team__social {
+    bottom: 0;
+    opacity: 1;
+}
+
+
+.rkit-team__centered .rkit-team-card{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rkit-team__centered .rkit-team__img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50%;
+    min-width: 180px;
+
+}
+
+.rkit-team__centered .rkit-team__img img {
+    aspect-ratio: 1/1;
+}
+
+.rkit-team__centered .rkit-team__detail {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.facebook {
+    --color: #1877F2; /* Facebook Blue */
+    --icon-color : #ffffff;
+}
+
+.twitter {
+    --color: #000000; /* X (Twitter) Black */
+    --icon-color : #ffffff;
+}
+
+.pinterest {
+    --color: #E60023; /* Pinterest Red */
+    --icon-color : #ffffff;
+}
+
+.linkedin {
+    --color: #0A66C2; /* LinkedIn Blue */
+    --icon-color : #ffffff;
+}
+
+.quora {
+    --color: #B92B27; /* Quora Red */
+    --icon-color : #ffffff;
+}
+
+.reddit {
+    --color: #FF4500; /* Reddit Orange */
+    --icon-color : #ffffff;
+}
+
+.telegram {
+    --color: #26A5E4; /* Telegram Blue */
+    --icon-color : #ffffff;
+}
+
+.viber {
+    --color: #665CAC; /* Viber Purple */
+    --icon-color : #ffffff;
+}
+
+.whatsapp {
+    --color: #25D366; /* WhatsApp Green */
+    --icon-color : #ffffff;
+}
+
+.line {
+    --color: #00B900; /* LINE Green */
+    --icon-color : #ffffff;
+}
+
+.facebook:hover {
+    --color: #145DBF; /* Facebook Darker Blue */
+    --icon-color : #ffffff;
+}
+
+.twitter:hover {
+    --color: #1C1C1C; /* X (Twitter) Darker Black */
+    --icon-color : #ffffff;
+}
+
+.pinterest:hover {
+    --color: #B8001B; /* Pinterest Darker Red */
+    --icon-color : #ffffff;
+}
+
+.linkedin:hover {
+    --color: #004182; /* LinkedIn Darker Blue */
+    --icon-color : #ffffff;
+}
+
+.quora:hover {
+    --color: #8A211D; /* Quora Darker Red */
+    --icon-color : #ffffff;
+}
+
+.reddit:hover {
+    --color: #CC3700; /* Reddit Darker Orange */
+    --icon-color : #ffffff;
+}
+
+.telegram:hover {
+    --color: #007BA7; /* Telegram Darker Blue */
+    --icon-color : #ffffff;
+}
+
+.viber:hover {
+    --color: #514483; /* Viber Darker Purple */
+    --icon-color : #ffffff;
+}
+
+.whatsapp:hover {
+    --color: #1EBE5C; /* WhatsApp Darker Green */
+    --icon-color : #ffffff;
+}
+
+.line:hover {
+    --color: #009900; /* LINE Darker Green */
+    --icon-color : #ffffff;
+}
+
+.tiktok {
+    --color : #000000;
+    --icon-color : #ffffff;
+}
+
+.tiktok:hover {
+    --color : #1C1C1C;
+    --icon-color : #ffffff;
+}
+
+.github {
+    --color : #333333;
+    --icon-color : #ffffff;
+}
+
+.github:hover {
+    --color : #000000;
+    --icon-color : #ffffff;
+}
+
+.youtube {
+    --color : #ff0000;
+    --icon-color : #ffffff;
+}
+
+.youtube:hover {
+    --color : #CD201F;
+    --icon-color : #ffffff;
+}
+
+.instagram {
+    --color : #E1306C;
+    --icon-color : #ffffff;
+}
+
+.instagram:hover {
+    --color : #c13584;
+    --icon-color : #ffffff;
+}
+
+.dribbble {
+    --color :  #ea4c89;
+    --icon-color : #ffffff;
+}
+
+.dribbble:hover {
+    --color : #ca2e6a;
+    --icon-color : #ffffff;
+}
+
+.behance {
+    --color : #1769ff;
+    --icon-color :#ffffff;
+}
+
+.behance:hover {
+    --color:#153bbb;
+    --icon-color : #ffffff;
+}

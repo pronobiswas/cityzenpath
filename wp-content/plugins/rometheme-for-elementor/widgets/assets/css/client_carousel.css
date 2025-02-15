@@ -1,0 +1,349 @@
+  .rkit-swiper-cl {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .rkit-clientslogo {
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+  .rkit-clientslogo-slider {
+    padding : 0px 20px 0px 20px;
+  }
+  
+  .rkit-clientcaraosel-pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  /* css image */
+
+  /* .image-container image-container {
+   overflow: hidden ; 
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  } */
+  
+  .image-container {
+    overflow: hidden ; 
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  .clientslogo-image{
+      position: absolute; 
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  
+      
+  }
+
+  .clientslogo-image-full{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    overflow: hidden;
+    
+}
+
+  .clientslogo-image-full img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      aspect-ratio : 1/1;
+  }
+
+  /* image hover */
+  .image-hover {
+    opacity: 0;
+    display: relative; 
+    align-items: center;
+    justify-content: center;
+    /* color: #000000; */
+  }
+ 
+
+.fade_in .image-hover { 
+  transform: scale(1);
+}
+
+.fade_in:hover .image-hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.fade_in:hover .image-default {
+  opacity: 0; 
+}
+
+
+
+.horizontal .image-hover {
+  transform: translateX(100%);
+}
+
+.horizontal:hover .image-hover {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.horizontal:hover .image-default {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.vertical .image-hover {
+  transform: translateY(100%);
+}
+
+.vertical:hover .image-hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vertical:hover .image-default {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+ 
+
+
+
+/*  text hover */
+.hover-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 100%;
+  height: 100%;
+  padding: 0px;  
+  background: rgba(0, 0, 0, 0.75);  
+  border-radius: 0px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  text-align: center; 
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;  
+}
+
+.fade_in .hover-conten  {
+  transform: none;
+}
+
+.fade_in:hover .hover-conten{
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  transform: translateX(0);
+}
+
+
+.horizontal .hover-conten  {
+    transform: translateX(100%);
+}
+
+.horizontal:hover .hover-conten{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.vertical .hover-conten {
+    transform: translateY(100%);
+}
+
+.vertical:hover .hover-conten {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.hover-title {
+  font-size: 16px;  
+  margin: 10px;
+  font-weight: bold; 
+  color: #fff; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  transition: color 0.3s ease-in-out; 
+}
+
+.hover-description {
+  font-size: 11px;  
+  margin: 10px 10px 10px 10px;
+  color: #ddd; 
+  line-height: 1.5; 
+  transition: color 0.3s ease-in-out; 
+}
+
+/* end css image and hover */
+
+/* navigation css */
+
+.rkit-swiper-cl-button-prev {
+  left: 0;
+  top: 50%;
+}
+ 
+.rkit-swiper-cl-button-next {
+  right: 0;
+  top: 50%;
+}
+
+.rkit-swiper-cl-button-next,
+.rkit-swiper-cl-button-prev {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-color: #33e4c0;
+  transform: translateY(-50%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  border-radius: 0px;
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+}
+
+
+/* dots and overlay style css */
+  .rkit-clientcaraosel-bullet {
+    width: 8px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #aaaaaa;
+    transition: all 0.5s ease;
+  }
+  
+  .rkit-clientcaraosel-bullet-active {
+    background-color: #161616;
+  }
+  
+  .rkit-clientcaraosel-bullet-clickable .rkit-clientcaraosel-bullet {
+    cursor: pointer;
+  }
+  
+  .card-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .card-title {
+    margin: 0;
+  
+  }
+  
+  .card-title a {
+    text-decoration: none;
+    color: #161616;
+  }
+  
+  .card-heading {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rkit-swiper-cl-button-prev.swiper-button-disabled,
+  .rkit-swiper-cl-button-next.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+  }
+  
+  .rkit-clientslogo .card-button a {
+    background-color: #33e4c0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 0px;
+  }
+  
+  .rkit-clientslogo .card-button {
+    display: flex;
+    justify-content: start;
+  }
+  
+  .rkit-clientslogo .card-button a .button-icon {
+    transition: color 0.5s;
+  }
+  
+  .rkit-clientslogo.overlay {
+    position: relative;
+  }
+  
+  .rkit-clientslogo.overlay .card-body {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .rkit-clientslogo.overlay .card-button {
+    justify-content: center;
+  }
+  
+  .rkit-clientslogo.overlay:hover .card-body {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  
+  .rkit-clientslogo-slider .swiper-slide {
+    overflow: unset;
+  }
+  
+  .card-button.fullwidth a {
+    width: 100%;
+  }
+
+
+
+

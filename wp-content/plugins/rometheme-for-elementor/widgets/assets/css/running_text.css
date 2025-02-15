@@ -1,0 +1,62 @@
+.rkit-text-marquee {
+  overflow: hidden;
+}
+
+.rkit-marquee-container {
+  overflow: hidden;
+  /*   white-space: nowrap; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  --gap: 5rem;
+  --speed: 20;
+  /*   gap: var(--gap); */
+}
+
+.rkit-marquee {
+  animation: marquee calc(100s / var(--speed)) infinite linear;
+}
+
+.rkit-marquee-container:hover .pause-hover {
+  animation-play-state: paused;
+}
+
+.rkit-marquee-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+.rkit-marquee-item {
+  text-wrap: nowrap;
+  padding-right: var(--gap);
+}
+
+.rkit-marquee-item-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.rkit-running-text__text {
+  background: black;
+  font-size: 3rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rkit-running-text__icon {
+  font-size: 3rem;
+  width: 3rem;
+  color: black;
+  fill: black;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
