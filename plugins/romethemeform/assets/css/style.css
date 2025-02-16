@@ -1,0 +1,26 @@
+.elementor-panel .elementor-element .rform-widget-icon {
+    color: #33e4c0;
+}
+
+.elementor-panel .elementor-element .rform-widget-icon::after {
+    content: 'RFORM';
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    color: white;
+    font-size: 9px;
+    font-weight: 400;
+    padding: 1px 2px;
+    line-height: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    font-family: "Open Sans", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.elementor-panel .elementor-element:hover .rform-widget-icon::after {
+    color: #33e4c0;
+}
+
+.elementor-panel .elementor-element:has(.rform-widget-icon):hover .title {
+    color: #33e4c0;
+}

@@ -1,0 +1,261 @@
+.rkit-postcarousel-body {
+  padding: 32px 16px 32px 16px;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+.rkit-swiper-postcarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.rkit-postcarousel {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.rkit-image-postcarousel-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.rkit-postcarousel-card {
+  background-color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rkit-w-50 {
+  width: 50%;
+}    
+
+.rkit-image-postcarousel-container {
+  position: relative;
+}
+
+.rkit-postcarousel-img { 
+  display: block;
+  transition: all 0.5s;
+  object-fit: cover;
+  object-position: center; 
+  height: 220px;
+  width: 100%;
+}
+
+.rkit-postcarousel-card:hover .rkit-postcarousel-img {
+  transform: scale(1.1);
+}
+
+.rkit-metadata,
+.rkit-metadata a {
+  color: gray;
+}
+
+.rkit-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+}
+
+.rkit-float-metawrapper-date-postcarousel {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: #00cea6;
+  color : #ffffff;
+}
+
+.rkit-float-metawrapper-date-postcarousel>span {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1;
+
+}
+
+.rkit-float-metawrapper-date-postcarousel>span>strong {
+  font-size: large;
+}
+
+.rkit-floating-category {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  font-size: 12px;
+  z-index: 2;
+  gap: 0.5rem;
+}
+
+
+.rkit-floating-category-btn {
+  background-color: #535353;
+  padding-inline: 15px;
+  border-radius: 0px;
+  color: #ffffff;
+  border: none;
+}
+
+.rkit-floating-category-btn:hover {
+  background-color: #33e4c0;
+  color: black;
+}
+
+.rkit-readmore-btn {
+  background-color: #33e4c0;
+  border-radius: 0px;
+  text-align: center;
+  padding: 12px 20px 12px 20px;
+  font-size: 15px;
+  color: white;
+  transition: all 0.5s;
+  border: none;
+  display: flex;
+  align-items: left;
+  gap: 0.5rem;
+  /* display: inline-flex;  */
+  align-items: center;   
+  justify-content: center;  
+  text-decoration: none;  
+  padding: 10px 20px;
+}
+
+.rkit-readmore-btn:hover {
+  background-color: #33e4c0;
+  color: black;
+}
+
+.rkit-readmore-div {
+  display: flex;
+}
+
+.rkit-metadata-item {
+  gap : 5px;
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
+}
+
+
+.rkit-postcarousel .rkit-postcarousel-body.rkit-postcarousel-highlight-border::before {
+  content: "";
+  display: block;
+  height: 50%;
+  width: 2px;
+  background: #ff712b;
+  position: absolute;
+  z-index: 999;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+}
+
+.rkit-postcarousel-title-container {
+  display : flex;
+  margin : 10px 0px 10px 0px;
+}
+
+.rkit-postcarousel-title{
+  font-size: 20px;
+  font-weight: 700;
+  color :black;
+}
+
+.rkit-postcarousel-paragraph {
+  margin: 0px 0px 30px 0px;
+}
+
+.rkit-swiper-postcarousel-button-prev {
+  left: 0;
+  top: 50%;
+}
+
+.rkit-swiper-postcarousel-button-next {
+  right: 0;
+  top: 50%;
+}
+
+.rkit-swiper-postcarousel-button-next,
+.rkit-swiper-postcarousel-button-prev {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-color: #33e4c0;
+  transform: translateY(-50%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  border-radius: 0px;
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+}
+
+.rkit-swiper-postcarousel-button-prev.swiper-button-disabled,
+.rkit-swiper-postcarousel-button-next.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.rkit-postcarousel-pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+
+.rkit-postcarousel-bullet {
+  width:  8px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #aaaaaa;
+  transition: all 0.5s ease;
+}
+
+.rkit-postcarousel-bullet-active {
+  background-color: #161616;
+}
+
+.rkit-postcarousel-bullet-clickable .rkit-postcarousel-bullet {
+  cursor: pointer;
+}
+
+@media only screen and (max-width:1024px) {
+  .rkit-postcarousel {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .rkit-postcarousel {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .rkit-postcarousel-card {
+      flex-direction: column !important;
+  }
+
+  .rkit-w-50 {
+      width: 100%;
+  }
+}

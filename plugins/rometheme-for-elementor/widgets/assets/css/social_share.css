@@ -1,0 +1,186 @@
+.rkit-social-media__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.54rem;
+}
+
+.rkit-social-media__list .rkit-social-share__link {
+  width: fit-content;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  line-height: 1;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.rkit-social-share.fullwidth .rkit-social-share__link {
+  width: 100%;
+  justify-content: center;
+}
+
+.facebook {
+  --color: #1877f2; /* Facebook Blue */
+}
+
+.twitter {
+  --color: #000000; /* X (Twitter) Black */
+}
+
+.pinterest {
+  --color: #e60023; /* Pinterest Red */
+}
+
+.linkedin {
+  --color: #0a66c2; /* LinkedIn Blue */
+}
+
+.quora {
+  --color: #b92b27; /* Quora Red */
+}
+
+.reddit {
+  --color: #ff4500; /* Reddit Orange */
+}
+
+.telegram {
+  --color: #26a5e4; /* Telegram Blue */
+}
+
+.viber {
+  --color: #665cac; /* Viber Purple */
+}
+
+.whatsapp {
+  --color: #25d366; /* WhatsApp Green */
+}
+
+.line {
+  --color: #00b900; /* LINE Green */
+}
+
+.facebook:hover {
+  --color: #145dbf; /* Facebook Darker Blue */
+}
+
+.twitter:hover {
+  --color: #1c1c1c; /* X (Twitter) Darker Black */
+}
+
+.pinterest:hover {
+  --color: #b8001b; /* Pinterest Darker Red */
+}
+
+.linkedin:hover {
+  --color: #004182; /* LinkedIn Darker Blue */
+}
+
+.quora:hover {
+  --color: #8a211d; /* Quora Darker Red */
+}
+
+.reddit:hover {
+  --color: #cc3700; /* Reddit Darker Orange */
+}
+
+.telegram:hover {
+  --color: #007ba7; /* Telegram Darker Blue */
+}
+
+.viber:hover {
+  --color: #514483; /* Viber Darker Purple */
+}
+
+.whatsapp:hover {
+  --color: #1ebe5c; /* WhatsApp Darker Green */
+}
+
+.line:hover {
+  --color: #009900; /* LINE Darker Green */
+}
+
+.rkit-social-share.flat .rkit-social-share__link {
+  background-color: var(--color);
+  color: white;
+  fill: white;
+}
+
+.rkit-social-share.flat .rkit-social-share__link:hover {
+  color: white;
+  fill: white;
+}
+
+.rkit-social-share.outline .rkit-social-share__link,
+.rkit-social-share.framed .rkit-social-share__link {
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--color);
+  color: var(--color);
+  fill: var(--color);
+  background: transparent;
+}
+
+.rkit-social-share.framed .rkit-social-share__link:hover {
+  background: transparent;
+  color: var(--color);
+  fill: var(--color);
+}
+
+.rkit-social-share.outline .rkit-social-share__link:hover {
+  background-color: var(--color);
+  color: white;
+  fill: white;
+}
+
+.rkit-social-share.flat-on-hover .rkit-social-share__link {
+  background: transparent;
+  color: var(--color);
+  fill: var(--color);
+}
+
+.rkit-social-share.flat-on-hover .rkit-social-share__link:hover {
+  background-color: var(--color);
+  color: white;
+  fill: white;
+}
+
+.rkit-social-share.pointer .rkit-social-share__link,
+.rkit-social-share.pointer .rkit-social-share__link:hover,
+.rkit-social-share.pointer-on-hover .rkit-social-share__link,
+.rkit-social-share.pointer-on-hover .rkit-social-share__link:hover {
+  --pointer-width: 3px;
+  position: relative;
+  background: transparent;
+  color: var(--color);
+  fill: var(--color);
+}
+
+.rkit-social-share.pointer .rkit-social-share__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: var(--pointer-width);
+  background-color: var(--color);
+  transform: translateY(50%);
+}
+
+.rkit-social-share.pointer-on-hover .rkit-social-share__link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  width: 0%;
+  height: var(--pointer-width);
+  background-color: var(--color);
+  transition: width 0.5s;
+  transform: translateX(-50%);
+}
+
+.rkit-social-share.pointer-on-hover .rkit-social-share__link:hover::after {
+  width: 100%;
+}

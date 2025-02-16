@@ -1,0 +1,465 @@
+.rkit-image_box-card {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    transition: all 0.3s;
+    overflow: hidden;
+    /* padding: 16px 32px 16px 32px; */
+}
+
+.rkit-image_box-card.rkit-direction{
+    flex-direction: column; 
+}
+
+
+.rkit-icon-top{
+    font-size: 45px;
+    width: 45px;
+    height: 45px;
+}
+
+.rkit-icon-readmore{
+    font-size: 25px;
+    width: 25px;
+    height: 25px; 
+}
+
+.rkit-container-top{
+    display: flex;
+    flex-direction: row;
+    padding : 0px; 
+}
+
+.rkit-container-top {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    width: 100%;   
+  }
+  
+  .left{
+    width: 45%;   
+    text-align: left;  
+  }
+
+  .right { 
+    position: relative;  
+    text-align: right;  
+    /* width: 45%;     */
+  }
+  
+
+
+.rkit-image_box_det{ 
+    width : 100%;
+    display: flex; 
+    justify-content: center; 
+}
+ 
+ 
+.rkit-image_box__detail {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap : 15px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-box-item-desc  {
+    display: flex;
+    flex-direction: column;
+    gap : 15px;
+    width: 100%;
+}
+.rkit-image_box__detail h4 {
+    margin-bottom: 0;
+}
+
+.rkit-image_box__img {
+    display: flex;
+    justify-content: center;
+    object-fit: contain; 
+    padding: 0px 0px 0px 0px;
+}
+
+.rkit-image_box__img{
+    overflow: hidden;
+}
+
+.rkit-image_box__img img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    overflow: hidden;
+} 
+
+.rkit-image_box__description { 
+    width: 100%;
+    margin-bottom: 0.5rem;
+    /* padding : 16px 32px 16px 32px; */
+    text-align: center;
+}
+
+.rkit-image_box__title{
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    /* padding : 16px 32px 16px 32px; */
+    text-align: center;
+}
+
+
+ 
+/* css style float card */
+.rkit-image_box_det{ 
+  position : relative;
+    width : 100%;
+    display: flex; 
+    justify-content: center; 
+}
+
+.float-card{ 
+    position : relative;
+      width : 100%;
+      display: flex; 
+      justify-content: center; 
+  }
+  
+  .float-detail { 
+      position : relative;
+      background-color : #ffffff;
+      width : 90%;
+      padding: 1rem;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap : 1px;
+      border-radius : 0px;
+      margin-top : -75px; 
+      /* box-shadow: 0px 4px 24px rgba(8, 8, 8, 0.479); */
+      /* border-style: solid;
+      border-color:#33e4c16b; */
+  }
+  
+  .float-detail{
+      position: relative;  
+      overflow: hidden;  
+      max-height: 300px;  
+      transition: max-height 0.5s ease, opacity 0.5s ease; 
+  }
+  
+  .float-card-desc-ext {
+      opacity: 0; 
+      max-height: 0;  
+      transition: opacity 0.5s ease, max-height 0.5s ease;  
+  }
+  
+  /* Menampilkan deskripsi dan tombol saat hover */
+  .rkit-image_box-card:hover .float-card-desc-ext{
+      opacity: 1;  
+      max-height: 200px; 
+  }
+  
+  .float-card:hover {
+      max-height: 300px;  
+  }
+  
+  
+
+
+
+/* css style overlay */
+/* .rkit-image_box__overlay .rkit-image_box_det {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding : 16px 32px 16px 32px; 
+    z-index: 2;
+}
+ 
+.rkit-image_box__overlay:hover .rkit-image_box_det .bg_overlay{
+    visibility: visible;
+    animation: overlay_animation_in 0.3s ease-in;
+}
+
+.rkit-image_box__overlay:not(:hover) .rkit-image_box_det .bg_overlay{
+    transform: scaleY(0);    
+    opacity: 0;
+    animation: overlay_animation_out 0.3s ease-out;
+} */
+.rkit-image_box__overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.rkit-image_box__overlay .rkit-image_box_det {
+    visibility: hidden; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px 32px;
+    opacity: 0; 
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 2;
+}
+
+.bg_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00CEA6;
+    transform: scaleY(0);  
+    transform-origin: top; 
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 1;
+}
+
+.rkit-image_box__overlay:hover .rkit-image_box_det {
+    visibility: visible;
+    opacity: 1;
+}
+
+.rkit-image_box__overlay:hover .bg_overlay {
+    visibility: visible;
+    transform: scaleY(1); 
+    opacity: 0.2; 
+}
+
+.rkit-image_box__overlay:not(:hover) .bg_overlay {
+    transform: scaleY(0); 
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+ 
+
+/* overlay fade in */
+
+.rkit-image_box_detaa {
+    max-width: 100%;
+    height: 100%;
+    padding: 0px;  
+    background: rgba(0, 0, 0, 0.75);  
+    border-radius: 0px;  
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  */
+    text-align: center; 
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;  
+  }
+  
+  .fade_in .rkit-image_box_detaa  {
+    transform: none;
+  }
+  
+  .fade_in:hover .rkit-image_box_detaa{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    transform: translateX(0);
+  }
+  
+
+  /* new default css */
+
+  .rkit-image_box_det{ 
+    position : relative;
+      width : 100%;
+      display: flex; 
+      justify-content: center; 
+  }
+  
+  .def-card{ 
+      position : relative;
+        width : 100%;
+        display: flex; 
+        justify-content: center; 
+    }
+    
+    .def-detail { 
+        position : relative;
+        background-color : #ffffff;
+        width : 90%;
+        padding: 1rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap : 1px;
+        border-radius : 0px;
+        margin-top : -75px;  
+    }
+    
+    .def-detail{
+        position: relative;  
+        overflow: hidden;  
+        max-height: 100%;  
+        transition: max-height 0.5s ease, opacity 0.5s ease; 
+    }
+    
+    .def-card-desc-ext {
+        opacity: 0; 
+        max-height: 0;  
+        transition: opacity 0.5s ease, max-height 0.5s ease;  
+    }
+    
+    /* Menampilkan deskripsi dan tombol saat hover */
+    .rkit-image_box-card .def-card-desc-ext{
+        opacity: 1;  
+        max-height: 200px; 
+    }
+    
+   
+
+
+
+ /* centered image css */
+.rkit-image_box__centered .rkit-image_box-card{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rkit-image_box__centered .rkit-image_box__img {
+    border-radius: 0%;
+    overflow: hidden;
+    width: 50%;
+    min-width: 180px;
+
+}
+
+.rkit-image_box__centered .rkit-image_box__img img {
+    aspect-ratio: 1/1;
+}
+
+.rkit-image_box__centered .rkit-image_box__detail {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+a.rkit-readmore-imagebox-btn {
+    display: inline-flex;
+    align-items: center; /* Posisikan ikon dan teks vertikal sejajar */
+    justify-content: center;
+    background-color: #00CEA6;
+    border-radius: 0px; 
+    padding: 12px 20px 12px 20px;
+    font-size: 15px;
+    color: white;
+    transition: all 0.5s;
+    border: none; 
+    gap: 0.5rem;
+  }
+  
+  a.rkit-readmore-imagebox-btn:hover {
+    background-color: #33e4c0;
+    color: black;
+  } 
+  
+
+.rkit-readmore-imagebox-div {
+    display: flex;
+    justify-content: center;
+  }
+
+/*  */
+
+
+a.rkit-button-top {
+    background-color: #00CEA6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    border : 0px;
+}
+
+  
+  a.rkit-button-top:hover {
+    background-color: #33e4c0;
+    color: black;
+  } 
+  
+ 
+
+
+
+  @keyframes overlay_animation_in {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: center;
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+        transform-origin: center;
+    }
+}
+
+@keyframes overlay_animation_out {
+    from {
+        opacity: 1;
+        transform: scaleY(1);
+        transform-origin: center;
+    }
+
+    to {
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: center;
+    }
+}
+
+.fade-in {
+    animation: overlay_animation_in 0.5s ease-in-out forwards; /* Animasi fade in */
+}
+
+.fade-out {
+    animation: overlay_animation_out 0.5s ease-in-out forwards; /* Animasi fade out */
+}

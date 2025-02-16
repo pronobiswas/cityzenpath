@@ -1,0 +1,734 @@
+/* Minimalist design option css */
+.rkit-product-grid-wpg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row; 
+    gap: 5px;
+    background-color: transparent;
+    justify-content: center;
+  }
+
+
+  
+  
+  .rkit-product-card-wpg {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 10px;  
+    position: relative;  
+    height: min-content;
+    width: -webkit-fill-available;
+
+  }
+
+  .rkit-addcart-wrap-button-wpg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+}
+
+  .rkit-product-card-wpg:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .rkit-product-image-wpg {
+    position: relative;
+    overflow: hidden; 
+  }
+
+.rkit-product-image-wpg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+
+.rkit-product-image-wpg:hover img {
+    transform: scale(1.1); 
+}
+
+.rkit-product-image-wpg:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #575555;
+  opacity : 0.3;
+  transition: width 0.6s ease;
+  z-index : 0;
+}
+  
+  .rkit-product-details-wpg {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rkit-product-info-wpg {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+  }
+  
+  .rkit-product-title-wpg {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0;
+    text-wrap: wrap;
+    text-wrap-style: stable;
+  }
+  
+  .rkit-product-category-wpg {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 4px;
+  }
+  
+  .rkit-product-price-wpg {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+  }
+
+  .rkit-product-feat-wpg{
+    display : flex;
+    flex-direction : column;
+    justify-content : right; 
+    text-align: end;
+  }
+  
+  .rkit-addcart-wrap-button-wpg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.rkit-product-image-wpg:hover .rkit-addcart-wrap-button-wpg {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+.rkit-addcart-button-wpg {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  font-size: 16px; 
+  font-weight: 600;
+  position: relative;  
+  transition: background-color 0.3s ease;
+}
+
+.rkit-addcart-button-wpg span {
+  position: relative;  
+  display: inline-block;
+}
+
+.rkit-addcart-button-wpg span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;  
+  left: 0;
+  width: 0%;  
+  height: 2px;  
+  background-color: #000000;  
+  transition: width 0.6s ease;  
+  z-index : 999;
+}
+
+.rkit-product-image-wpg:hover span::after {
+  width: 100%;  
+} 
+
+
+.rkit-product-rating-wpg {
+    font-size: 14px;
+    color: #f5c518;
+}
+
+/* ribbon */
+.rkit-product-ribbon-wpg {
+  position: absolute;
+  /* top: 10px;  */
+  background-color: #FF0000; /* Warna background ribbon */
+  color: #fff; /* Warna teks */
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: bold; 
+  z-index: 10;
+  border-radius: 0px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.rkit-product-card-wpg {
+  position: relative;  
+}
+
+/* =============================================divider======================================================= */
+
+/* profesional design css layout 2 */
+ 
+.rkit-product-grid-wpg-pro{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px; 
+  background-color: transparent;
+  justify-content: center;
+}
+
+.rkit-product-card-wpg-pro {
+  border-radius: 20px 20px 20px 20px;
+  /* background-color: transparent; */
+  /* background: linear-gradient(29deg, #000000 20%, #A0A0A0 100%); */
+  background-color: #A0A0A0;
+  padding: 20px 20px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 10px;  
+  position: relative;  
+  height : min-content;
+  width: -webkit-fill-available;
+} 
+
+.rkit-product-image-wpg-pro {
+  position: relative;
+  overflow: hidden; 
+  border-radius: 20px 20px 20px 20px;
+}
+
+.rkit-product-image-wpg-pro img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease; 
+  border-radius: 20px 20px 20px 20px;
+}
+
+.rkit-product-image-wpg-pro:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  opacity : 0.3;
+  transition: width 0.6s ease;
+  z-index : 1;
+}
+ 
+/* content */
+
+.rkit-product-details-wpg-pro {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rkit-product-info-wpg-pro {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+
+.rkit-product-title-wpg-pro {
+  /* font-size: 18px; */
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  text-wrap: wrap;
+} 
+.rkit-product-price-wpg-pro {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.rkit-product-feat-wpg-pro{
+  display : flex;
+  flex-direction : column;
+  justify-content : right; 
+  text-align: end;
+}
+
+.rkit-product-desc-wpg-pro{ 
+  opacity : 0;
+  max-height : 0;
+  overflow: hidden;
+  transition-delay : 2s; 
+  transition: max-height 0.5s ease, opacity 0.5s ease; 
+}
+
+.rkit-product-text-desc-wpg-pro{
+  font-size: 14px;
+  font-weight: 100;
+  color: #ffffff;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.rkit-product-card-wpg-pro:hover .rkit-product-desc-wpg-pro{
+  opacity: 1;  
+  max-height: 200px; 
+}
+
+
+/* button */
+.rkit-addcart-wrap-button-wpg-all-pro{
+  display: inline-flex;
+  position: relative;
+   justify-content : center;
+   width : 100%;
+   padding-top : 20px;
+   padding-bottom: 20px;
+   background-color: transparent;
+}
+
+.rkit-addcart-wrap-button-wpg-pro {
+  position: relative;
+  display: inline-block;  
+}
+
+/* Gradient border wrapper */
+.gradient-border {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 15px; 
+  /* background-image: linear-gradient(30deg, #00cea6, #535353); */
+  background-image: linear-gradient(30deg, var(--gradient-color-one), var(--gradient-color-two));
+  /* background-color: #D0D1D5; */
+  background-size: 500%;  
+  z-index: 0;  
+  animation: border-ambient 3s linear infinite;
+}
+
+/* The button itself */
+.rkit-addcart-button-wpg-pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(30deg, #00cea6, #1a1818); */
+  background-color: #00CEA6;
+  border-radius: 15px;  
+  padding: 12px 30px;
+  width : 100%;
+  max-width : 100%;
+  font-size: 15px;
+  color: white; 
+  position: relative;
+  z-index: 1;  
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.rkit-addcart-wrap-button-wpg-pro {
+  width: 100%;
+  margin: 0 auto; 
+  /* overflow: hidden;  */
+}
+
+
+/* Gradient animation */
+@keyframes border-ambient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 25%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.rkit-product-rating-wpg-pro {
+  font-size: 14px;
+  color: #f5c518;
+}
+
+/* ribbon pro*/
+.rkit-product-ribbon-wpg-pro {
+  background-color: #00CEA6;
+  /* background: linear-gradient(305deg, #393131 0%, #00CEA6 100%); */
+  margin-top: 0px;
+  border-radius:0px;
+  position: absolute;  
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.rkit-product-card-wpg-pro {
+position: relative; 
+}
+
+
+/* =============================================================================================================== */
+/* premium style css layout 3 */
+
+
+
+.rkit-product-grid-wpg-prem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;  
+  justify-content: center;
+  
+}
+
+.rkit-product-card-wpg-prem {
+  /* width: 100%;  */
+  padding: 20px;
+  background-color: #D0D1D5; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   
+  text-align: center;  
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  height: min-content;
+  width: -webkit-fill-available;
+}
+
+ 
+.rkit-product-image-wpg-prem {
+  position: relative; 
+  background-color: transparent;  
+}
+
+.rkit-product-image-wpg-prem img {
+  width: 100%;  
+  height: auto;  
+  display: block;  
+  object-fit: cover;
+  margin: 0 auto;  
+}
+.rkit-product-image-wpg-prem:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  opacity : 0.3;
+  transition: width 0.6s ease;
+  z-index : 0;
+}
+ 
+.rkit-product-ribbon-wpg-prem {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #00CEA6;  
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 20px;
+
+}
+
+.rkit-product-details-wpg-prem {
+  display: flex !important;
+  flex-direction: column-reverse;
+  align-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.6s ease-in-out;
+  height : min-content;
+  gap: 10px;
+  /* transform: translateY(60%);  */
+}
+
+.rkit-product-details-wpg-prem::before { 
+  content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: transparent;
+ opacity: 0.5; 
+ z-index: -1;
+}
+
+
+.rkit-product-info-wpg-prem {
+  margin-bottom: 12px;  
+  flex: 0 0 50%;
+}
+
+.rkit-product-title-wpg-prem {
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  width: fit-content;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.rkit-product-title-wpg-prem::after {
+  content: '';
+  text-align : left;
+  justify-content : start;
+  display: block;  
+  width: 50%;  
+  border-bottom: 3px solid #000000;  
+  margin: 0 auto;  
+  position: absolute;
+  left: 0;   
+  padding-bottom :10px;
+}
+.rkit-product-feat-wpg-prem {
+  display: flex;
+  flex-direction : column;
+  justify-content: space-between;  
+  align-items: start;
+}
+
+.rkit-product-price-wpg-prem {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000; 
+}
+
+.rkit-product-rating-wpg-prem {
+  font-size: 14px;
+  color: #f4a261; 
+}
+
+ 
+  
+.rkit-product-hov-wpg-prem{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* padding-top: 10px; */
+  height: min-content;
+  position: relative;
+  text-align: center;
+  opacity : 0;
+  max-height : min-content;
+  overflow : hidden;
+  visibility: hidden;
+   transform: translateY(-80%); 
+  transition: max-height 0.5s ease, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+} 
+
+.rkit-product-card-wpg-prem:hover .rkit-product-details-wpg-prem {
+  transform: translateY(-70%);
+}
+
+.rkit-product-card-wpg-prem:hover .rkit-product-hov-wpg-prem {
+  opacity: 1;
+  height : fit-content;
+  max-height : min-content;
+  visibility: visible;
+  transform: translateY(-100%); 
+}
+ 
+ 
+.rkit-addcart-button-wpg-prem {
+  display: flex;
+  justify-content: center;
+  background-color : #1F1F29;
+  border-radius: 15px;  
+  padding: 10px 20px; 
+  font-size: 15px;
+  color: #D9DADE; 
+  position: relative; 
+  
+}
+.rkit-addcart-wrap-button-wpg-prem {
+    display: flex;
+  flex: 0 0 40%;
+  align-items: end;
+  width: 100%;
+  margin: 0 auto;  
+  align-content: center;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.rkit-addcart-wrap-button-wpg-prem span  {
+  display: flex;
+  align-items: center;
+}
+
+.rkit-addcart-wrap-button-wpg-prem i {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.text-button{
+  display : flex;
+}
+
+
+.rkit-product-desc-wpg-prem{  
+  padding : 0px 8px 0px 0px;
+  display: flex;
+  flex: 0 0 60%;
+  overflow: hidden;
+  transition-delay : 2s; 
+  transition: max-height 0.5s ease, opacity 0.5s ease; 
+}
+
+.rkit-product-text-desc-wpg-prem{
+  font-size: 14px;
+  font-weight: 100;
+  color: #000000;
+  text-wrap: wrap;
+  text-align: left;
+  max-width: 100%;
+  overflow: hidden; 
+}
+
+
+
+/* Styling untuk bintang */  
+.star-rating-wpg {
+  display: inline-block;
+  font-size: 20px;  
+  line-height: 1;
+  color: #ddd;  
+  position: relative;
+}
+
+.star-rating-wpg span {
+  display: block;
+  color: #f5c518;  
+  overflow: hidden;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  width: 0;  
+}
+
+
+/* SALE PRICE */
+.rkit-product-sale-price-wpg {
+  color: #000000;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.rkit-product-sale-price-wpg-pro {
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.rkit-product-sale-price-wpg-prem {
+  color: #000000;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+/* REGULAR PRICE (Jika Ada Sale Price) */
+.if-sale-price-wpg{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  line-height: 0px;
+  gap: 2px;
+  padding-bottom: 20px;
+}
+
+.if-sale-price-wpg-pro{
+  display: flex;
+  flex-direction: row;
+    align-items: center;
+  /* line-height: 0px; */
+  gap: 5px;
+}
+
+.if-sale-price-wpg-prem{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.rkit-product-sale-price-reguler-wpg {
+  color: #777;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.rkit-product-sale-price-reguler-wpg-pro {
+  color: #ffffff;
+  text-decoration: line-through;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.rkit-product-sale-price-reguler-wpg-prem {
+  color: #777;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* REGULAR PRICE (Tanpa Sale Price) */
+.rkit-product-price-reguler-wpg {
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rkit-product-price-reguler-wpg-pro {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rkit-product-price-reguler-wpg-prem {
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+ 
