@@ -5,3 +5,13 @@ if (!is_user_logged_in()) {
     exit;
 }
 get_footer('dashboard');
+
+?>
+<script>
+        $(document).ready(function() {
+            $(".droplink > a").click(function(e) {
+                e.preventDefault(); // Prevent default link behavior
+                $(this).siblings(".sub-menu").slideToggle();
+            });
+        });
+    </script>

@@ -22,16 +22,12 @@ $logout_url = wp_logout_url(home_url()); // Logout and redirect to homepage
                         <span class="active-page"></span>
                     </a>
                 </li>
-                <li class="droplink">
-                    
-                    <a href="#" class="waves-effect waves-button">
-                        <span class="menu-icon icon-pencil"></span>
-                        <p>Forms</p><span class="arrow"></span>
+                <li class="">
+                    <a href="<?php echo esc_url(get_the_permalink());?>?bd=forms" class="waves-effect waves-button">
+                        <span class="menu-icon icon-user"></span>
+                        <p>Forms</p>
+                        <span class="active-page"></span>
                     </a>
-                    <ul class="sub-menu">
-                        <li><a href="<?php echo home_url('/form-elements'); ?>">Form Elements</a></li>
-                        <li><a href="<?php echo home_url('/form-wizard'); ?>">Form Wizard</a></li>
-                    </ul>
                 </li>
                 <li>
                     <a href="<?php echo esc_url($logout_url); ?>" class="waves-effect waves-button">
@@ -52,3 +48,4 @@ $logout_url = wp_logout_url(home_url()); // Logout and redirect to homepage
             </div>
         </div>
         <div id="main-wrapper">
+        
