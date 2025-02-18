@@ -25,8 +25,14 @@ function enqueue_user_dashboard_assets() {
         wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/assets/plugins/bootstrap/js/bootstrap.min.js', array('jquery'), null, true);
         wp_enqueue_script('waves', get_stylesheet_directory_uri() . '/assets/plugins/waves/waves.min.js', array('jquery'), null, true);
         wp_enqueue_script('meteor', get_stylesheet_directory_uri() . '/assets/js/meteor.min.js', array('jquery'), null, true);
+
+        wp_enqueue_script('multistep-form', get_stylesheet_directory_uri() . '/assets/js/multistep-form.js', array('jquery'), null, true);
+        wp_localize_script('multistep-form', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+
+
+
     }
-}
+}   
 add_action('wp_enqueue_scripts', 'enqueue_user_dashboard_assets');
 
 // Hide admin bar for subscribers
@@ -72,63 +78,91 @@ function custom_logout_redirect() {
     wp_redirect(home_url('/user-login/')); // Redirect to login page after logout
     exit();
 }
-add_action('wp_logout', 'custom_logout_redirect');
 
 
-function handle_user_dashboard_form() {
-    if (isset($_POST['user_dashboard_form'])) {
-        // Verify Nonce (Security Check)
-        if (!isset($_POST['_wpnonce']) || !wp_verify_nonce($_POST['_wpnonce'], 'user_dashboard_action')) {
-            wp_die('Security check failed!');
-        }
 
-        // Get Current User
-        $current_user = wp_get_current_user();
-        $user_id = $current_user->ID;
+// Load the Form
+require_once get_stylesheet_directory() . '/multistep-form.php';
 
-        // Sanitize Inputs
-        $user_name = sanitize_text_field($_POST['user_name']);
-        $user_email = sanitize_email($_POST['user_email']);
+// Load Form Handling & PDF Generation
+require_once get_stylesheet_directory() . '/inc/save-step.php';
 
-        // Update User Data
-        wp_update_user([
-            'ID'           => $user_id,
-            'display_name' => $user_name,
-            'user_email'   => $user_email
-        ]);
-
-        // Redirect After Submission
-        wp_redirect(add_query_arg('updated', 'true', get_permalink()));
-        exit;
-    }
-}
-add_action('init', 'handle_user_dashboard_form');
-
-//menu
-function custom_user_menu_item($items, $args) {
-    if ($args->theme_location !== 'primary') {
-        return $items;
+function form_status_shortcode() {
+    if (!is_user_logged_in()) {
+        return '<p>You must be logged in.</p>';
     }
 
-    if (is_user_logged_in()) {
-        $current_user = wp_get_current_user();
-        
-        if (in_array('subscriber', $current_user->roles)) {
-            $dashboard_url = site_url('/user-dashboard/');
-            $logout_url = wp_logout_url(site_url('/user-login/')); // Redirect after logout
-            
-            $items .= '<li class="menu-item"><a href="' . esc_url($dashboard_url) . '">Dashboard</a></li>';
-        }
+    $user_id = get_current_user_id();
+    
+    // Corrected ternary operation
+    $form_id = isset($_GET['form_id']) ? intval($_GET['form_id']) : (get_user_meta($user_id, 'multi_step_last_form_id', true) ?: 1);
+    
+    $form_completed = get_user_meta($user_id, "multi_step_completed_{$form_id}", true);
+
+    // Debugging log
+    error_log("User ID: $user_id | Form ID: $form_id | Status: " . print_r($form_completed, true));
+
+    if ($form_completed == '1') {
+        return '<p style="color: green; font-weight: bold;">Form Completed</p>';
     } else {
-        $login_url = site_url('/user-login/');
-        $register_url = site_url('/user-register/');
+        return '<p style="color: red; font-weight: bold;">Incomplete Form</p>';
+    }
+}
+add_shortcode('form_status', 'form_status_shortcode');
 
-        $items .= '<li class="menu-item"><a href="' . esc_url($login_url) . '">Login</a></li>';
+
+//delete form
+function delete_user_form() {
+    if (!is_user_logged_in() || !isset($_POST['form_id'])) {
+        wp_send_json_error("Invalid request");
     }
 
-    return $items;
+    $user_id = get_current_user_id();
+    $form_id = intval($_POST['form_id']);
+
+    // Delete form-related user meta
+    delete_user_meta($user_id, "multi_step_completed_{$form_id}");
+    delete_user_meta($user_id, "multi_step_last_form_id", $form_id);
+
+    wp_send_json_success();
 }
-add_filter('wp_nav_menu_items', 'custom_user_menu_item', 10, 2);
+add_action('wp_ajax_delete_user_form', 'delete_user_form');
 
 
+//pdf generate
+add_action('wp_ajax_generate_pdf', 'generate_pdf');
 
+function generate_pdf() {
+    require_once get_stylesheet_directory() . '/tcpdf/tcpdf.php';
+
+    if (!is_user_logged_in()) {
+        wp_die('Unauthorized access');
+    }
+
+    $user_id = get_current_user_id();
+    $name = get_user_meta($user_id, 'multi_step_name', true);
+    $email = get_user_meta($user_id, 'multi_step_email', true);
+    $address = get_user_meta($user_id, 'multi_step_address', true);
+    $nid = get_user_meta($user_id, 'multi_step_nid', true);
+    $passport = get_user_meta($user_id, 'multi_step_passport', true);
+
+    if (!class_exists('TCPDF')) {
+        die('TCPDF library not found.');
+    }
+
+    $pdf = new TCPDF();
+    $pdf->AddPage();
+    $html = "<h2>User Information</h2>
+    <p><strong>Name:</strong> $name</p>
+    <p><strong>Email:</strong> $email</p>
+    <p><strong>Address:</strong> $address</p>
+    <p><strong>NID:</strong> $nid</p>
+    <p><strong>Passport:</strong> $passport</p>";
+
+    $pdf->writeHTML($html);
+
+    // Fix for corrupted PDFs
+    ob_end_clean();
+    $pdf->Output('user-details.pdf', 'I'); 
+    exit;
+}
